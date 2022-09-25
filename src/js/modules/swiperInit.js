@@ -10,7 +10,7 @@ const swiperInit = () => {
     spaceBetween: 15,
     speed: 600,
     autoplay: {
-      delay: 4000,
+      delay: 8000,
       reverseDirection:true,
     },
 
@@ -33,6 +33,17 @@ const swiperInit = () => {
   });
   topSlider.init();
 
+  setTimeout(function toggleAutoplay() {
+    if (topSlider.autoplay.running) {
+      topSlider.autoplay.stop()
+    } else {
+      topSlider.autoplay.start()
+    }
+    setTimeout(toggleAutoplay, 8000);
+  }, 8000);
+
+
+
   const bottomSlider = new Swiper('.posts-slider--bottom-position', {
     modules: [Autoplay],
     slidesPerView: 4,
@@ -40,8 +51,9 @@ const swiperInit = () => {
     spaceBetween: 15,
     speed: 600,
     autoplay: {
-      delay: 4000,
-      reverseDirection:true,
+      delay: 16000,
+      reverseDirection: true,
+      waitForTransition: false
     },
 
     breakpoints: {
