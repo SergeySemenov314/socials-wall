@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* это лучше переписть, не у всех элементов есть фокус */
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1.2;
+  font-family: "Теущий основной шрифт", sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  /* vertical-align: baseline; */
+}
+
+/* по ссылкам мое дополнение */
+a, body a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* по кнопке мои добавления */
+button {
+  padding: 0;
+  font: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: none;
+}
+
+/* моие добавление */
+input {
+  padding: 0;
+  /* шрифт унаследуется у body */
+  font: inherit;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+/* моие добавление */
+address {
+  font-style: normal;
+}
+
+/* моие добавление */
+i {
+  font-style: normal;
+}
+
+/* добавил из чужого другого сброса */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1220px;
+  /* ширина контента+ падинги */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 92%;
+  }
+}
+.invisible {
+  display: none !important;
+}
+
+.inner-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.inner-full-img {
+  width: auto;
+  height: 95%;
+}
+
+@font-face {
+  font-family: "ALSRubl";
+  src: url(../fonts/ALSRubl.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=main.css.map*/
