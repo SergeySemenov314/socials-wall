@@ -1,0 +1,20 @@
+.promo-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 400px;
+  background-color: grey;
+  opacity: 0;
+  animation: toggle-opacity 72s linear infinite;
+}
+
+@keyframes toggle-opacity {
+  0% {  opacity: 0; }
+  86% {  opacity: 0; }
+  88% {  opacity: 1; }
+  98% {  opacity: 1; }
+  100% {  opacity: 0; }
+ }
+

@@ -5,7 +5,28 @@
 
 .posts-slider--top-position {
   margin-bottom: 15px;
+  animation: translate-top 72s linear infinite;
 }
+
+@keyframes translate-top {
+ 0% { transform: translateY(0); }
+ 86% { transform: translateY(0); }
+ 88% { transform: translateY(-85%); }
+ 98% { transform: translateY(-85%); }
+ 100% { transform: translateY(0); }
+}
+
+.posts-slider--bottom-position {
+  animation: translate-bottom 72s linear infinite;
+}
+
+@keyframes translate-bottom {
+  0% { transform: translateY(0); }
+  86% { transform: translateY(0); }
+  88% { transform: translateY(85%); }
+  98% { transform: translateY(85%); }
+  100% { transform: translateY(0); }
+ }
 
 .posts-slider__slide-inner {
   width: 468px;

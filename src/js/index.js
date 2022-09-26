@@ -4,7 +4,9 @@ import 'swiper/swiper-bundle.css';
 
 import swiperInit from './modules/swiperInit';
 
+
 swiperInit()
+
 
 
 
