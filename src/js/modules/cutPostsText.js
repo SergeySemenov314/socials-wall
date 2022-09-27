@@ -22,7 +22,7 @@ const cutPostsText = () => {
   }
 
   function cutText (text)  {
-    let maxLength = 165;
+    let maxLength = 150;
 
     if (text.length > maxLength) {
       text = text.slice(0, maxLength) + '...';
