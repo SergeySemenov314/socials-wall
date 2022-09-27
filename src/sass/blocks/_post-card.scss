@@ -15,7 +15,6 @@
   justify-content: flex-end;
   width: 200px;
   padding: 9px;
-  // padding: 25px;
   background-color: #177ee6;
   overflow: hidden;
   animation: increase-card-content 28s linear infinite;
@@ -51,9 +50,7 @@
 
 .post-card__text {
   height: 0;
-  // height: 343px;
   margin-bottom: 0;
-  // margin-bottom: 15px;
   color: #fff;
   font-size: 30px;
   opacity: 0;
