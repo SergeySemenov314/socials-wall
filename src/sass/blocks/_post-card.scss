@@ -56,8 +56,49 @@
   // margin-bottom: 15px;
   color: #fff;
   font-size: 30px;
+  opacity: 0;
   overflow: hidden;
+  animation: toggle-text-visibility 28s linear infinite;
 }
+
+@keyframes toggle-text-visibility {
+  0% {
+
+  }
+  43% {
+
+  }
+  49% {
+    height: 0;
+    margin-bottom: 0;
+  }
+  50% {
+    height: 343px;
+    margin-bottom: 15px;
+    opacity: 0;
+  }
+  53% {
+    height: 343px;
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+  92% {
+    height: 343px;
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+  93% {
+    height: 343px;
+    margin-bottom: 15px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    margin-bottom: 0;
+  }
+}
+
 .post-card__author-container {
   display: flex;
   align-items: center;
