@@ -1,0 +1,72 @@
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 468px;
+  height: 468px;
+  padding: 20px;
+  background-size: cover;
+  background-color: blue;
+}
+
+.post-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 200px;
+  padding: 9px;
+  // padding: 25px;
+  background-color: #177ee6;
+  overflow: hidden;
+  animation: increase-card-content 28s linear infinite;
+}
+
+@keyframes increase-card-content {
+  0% {
+    width: 200px;
+    height: 44px;
+    padding: 9px;
+  }
+  43% {
+    width: 200px;
+    height: 44px;
+    padding: 9px;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+  }
+  93% {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+  }
+  100% {
+    width: 200px;
+    height: 44px;
+    padding: 9px;
+  }
+}
+
+.post-card__text {
+  height: 0;
+  // height: 343px;
+  margin-bottom: 0;
+  // margin-bottom: 15px;
+  color: #fff;
+  font-size: 30px;
+  overflow: hidden;
+}
+.post-card__author-container {
+  display: flex;
+  align-items: center;
+}
+.post-card__social-icon {
+  width: 23px;
+  margin-right: 7px;
+}
+.post-card__author-name {
+  font-size: 22px;
+  color: #fff;
+}
