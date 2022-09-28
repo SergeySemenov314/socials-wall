@@ -36,13 +36,6 @@ module.exports = {
             filename: `./css/main.css`,
         }),
         new CleanWebpackPlugin(),
-        new CopyPlugin({
-            patterns: [{
-                    from: 'server',
-                    to: './'
-                },
-            ]
-        }),
     ],
     module: {
         rules: [
